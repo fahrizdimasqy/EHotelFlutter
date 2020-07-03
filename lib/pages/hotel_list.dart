@@ -108,7 +108,7 @@ class _HotelListState extends State<HotelList> {
             Container(
               height: MediaQuery.of(context).size.height / 1.4,
               child: Container(
-                margin: EdgeInsets.only(bottom: 90),
+                margin: EdgeInsets.only(bottom: 150),
                 child: ListView.builder(
                   itemCount: filteredHotels.length,
                   itemBuilder: (BuildContext context, int index) {
@@ -126,8 +126,8 @@ class _HotelListState extends State<HotelList> {
                       child: Container(
                         margin: EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(16),
-                            color: Colors.red),
+                          borderRadius: BorderRadius.circular(16),
+                        ),
                         height: MediaQuery.of(context).size.height / 3,
                         child: Column(
                           children: <Widget>[
@@ -282,9 +282,6 @@ class _HotelListState extends State<HotelList> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 1000,
-            )
           ],
         ),
       ),
